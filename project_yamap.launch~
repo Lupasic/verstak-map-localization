@@ -1,0 +1,18 @@
+<launch>
+
+  <node name="project_yamap" pkg="project_yamap" type="project_yamap" output="screen" >
+  <param name="adres" value="/home/lupasic/Programs/catkin_ws/src/dannie/cache" />
+  <param name="zoom_arrow_switch" value="14" />
+  </node>
+  <param name="topic_pose" value="kalman/XYgr_clear" /> 
+  <param name="topic_odo" value="kalman/odo" />
+  <param name="topic_pose_clear" value="/novatel/fix" />
+  <param name="publish_task_point" value="task_point" />
+
+  <!-- you can set parameters in child namespaces -->
+  <!-- upload the contents of a file to the server -->
+  <!-- <param name="configfile" textfile="$(find roslaunch)/example.xml" /> -->
+  <!-- upload the contents of a file as base64 binary to the server -->
+  <!-- <param name="binaryfile" binfile="$(find roslaunch)/example.xml" /> -->
+
+</launch>
